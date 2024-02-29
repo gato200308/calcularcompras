@@ -1,0 +1,9 @@
+Entrada de la función: La función toma un parámetro de entrada @ID_comp, que supongo es el identificador de la compra para la cual se desea calcular el total después de aplicar el descuento.
+
+Declaraciones de variables: Se declaran dos variables locales, @total y @descuento, para almacenar el total original de la compra y el porcentaje de descuento, respectivamente.
+
+Consulta SELECT: Se realiza una consulta a la tabla compra para obtener el total y el descuento asociados al ID_comp proporcionado.
+
+Cálculo del total con descuento: Se realiza el cálculo del nuevo total aplicando el descuento. El resultado se almacena en la variable @total.
+
+Declaración de retorno: La función devuelve el nuevo total calculado.
