@@ -1,0 +1,14 @@
+CREATE FUNCTION total_compra(
+  @ID_comp INT
+) RETURNS INT
+AS
+BEGIN
+  DECLARE @total INT;
+  DECLARE @descuento INT;
+
+  SELECT @total = total, @descuento = descuento
+  FROM compra
+  WHERE ID_comp = @ID_comp;
+
+  RETURN @total - (@total * @descuento / 100);
+END;
